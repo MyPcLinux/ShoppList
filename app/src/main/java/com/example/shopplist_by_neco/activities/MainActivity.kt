@@ -1,4 +1,4 @@
-package com.example.shopplist_by_neco
+package com.example.shopplist_by_neco.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

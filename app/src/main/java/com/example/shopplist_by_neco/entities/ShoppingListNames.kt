@@ -5,13 +5,13 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
-@Entity(tableName = "shopping_list_names") // Название таблицы
+@Entity(tableName = "shopping_list_names") // Название таблицы или @Entity - аннотация для объявления сущности базы данных.
 data class ShoppingListNames(
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey(autoGenerate = true)//@PrimaryKey - аннотация для объявления первичного ключа сущности.
     val id: Int?,// Добавляет индификатор
 
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "name")//@ColumnInfo - аннотация для настроек конкретного столбца сущности.
     val name: String, // Добавляет название таблицы
 
     @ColumnInfo(name = "time")
