@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.example.shopplist_by_neco'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.shopplist_by_neco"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -41,14 +41,20 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.10.1'
+
+   // implementation 'androidx.core:core-ktx:+'
+   // implementation 'androidx.room:room-runtime:2.6.0-alpha01'
+   // implementation 'androidx.room:room-ktx:2.5.1'
+   // kapt "androidx.room:room-compiler:2.5.1"
+
     //start
-    implementation 'androidx.room:room-ktx:2.3.0'
-    implementation 'androidx.core:core-ktx:+'
-    implementation 'androidx.core:core-ktx:+'
-    kapt 'androidx.room:room-compiler:2.3.0'
+    implementation 'androidx.room:room-ktx:2.5.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    kapt 'androidx.room:room-compiler:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.preference:preference-ktx:1.1.1'
+
     //finish
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
