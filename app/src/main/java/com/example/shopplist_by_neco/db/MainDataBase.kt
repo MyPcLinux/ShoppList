@@ -13,6 +13,7 @@ import com.example.shopplist_by_neco.entities.ShoppingListItem
                       ShoppingListItem::class], version = 1)
 
 abstract class MainDataBase: RoomDatabase() {
+    abstract fun getDao(): Dao
 
 
     companion object{
