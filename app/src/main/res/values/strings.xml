@@ -4,4 +4,7 @@
     <string name="notes">Notes</string>
     <string name="shop_list">Shop list</string>
     <string name="new_item">New item</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="time">time</string>
 </resources>
