@@ -8,6 +8,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.shopplist_by_neco.R
 import com.example.shopplist_by_neco.databinding.ActivityMainBinding
+import com.example.shopplist_by_neco.fragments.FragmentManager
+import com.example.shopplist_by_neco.fragments.NoteFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity() {
                     Log.d("MyLog", "$it")
                 }
                 R.id.notes ->{
-                    Log.d("MyLog", "$it")
+                   FragmentManager.setFragment(
+                       NoteFragment.newInstance(), this)
                 }
                 R.id.shop_list ->{
                     Log.d("MyLog", "$it")
